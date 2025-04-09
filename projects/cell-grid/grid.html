@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Cell Grid</title>
+    <link rel="stylesheet" href="css/grid.css">
+</head>
+<body>
+    <header>
+        <h1>Interactive Cell Grid</h1>
+    </header>
+    
+    <div class="controls">
+        <button id="clear-btn">Clear</button>
+        <button id="random-btn">Randomize</button>
+        <button id="start-btn">Start</button>
+        <button id="stop-btn" disabled>Stop</button>
+        <button id="expand-btn">Expand to Full View</button>
+    </div>
+    
+    <div id="grid" class="grid-container compact"></div>
+    
+    <div class="info">
+        <p>Click on cells to toggle them between alive and dead states.</p>
+        <p>Use the controls to clear the grid, randomize cells, or start/stop the simulation.</p>
+        <p>The simulation follows Conway's Game of Life rules:</p>
+        <ul>
+            <li>Any live cell with 2 or 3 live neighbors survives</li>
+            <li>Any dead cell with exactly 3 live neighbors becomes alive</li>
+        </ul>
+    </div>
+    
+    <script src="js/grid.js"></script>
+</body>
+</html> 

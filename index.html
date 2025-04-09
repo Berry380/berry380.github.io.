@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Atterberry - Portfolio</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">Henry Atterberry</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#edu">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section id="home" class="hero">
+        <div class="profile-container">
+            <img src="/assets/Pfp.png" alt="Henry Atterberry" class="profile-picture">
+        </div>
+        <div class="hero-content">
+            <h1>Hi, I'm Henry 👋</h1>
+            <p>Computer Science Student at University of North Texas</p>
+            <p class="subtitle">Passionate about Software Engineering, Cybersecurity, and IT</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="cta-button primary">View My Projects</a>
+                <a href="#contact" class="cta-button secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education -->
+    <section id="edu" class="edu">
+        <h2>Education</h2>
+        <div class="edu-content">
+            <div class="education-item">
+                <h3>University of North Texas</h3>
+                <p>I'm a Computer Science student at the University of North Texas with a strong foundation in programming and a keen interest in software development. Currently pursuing opportunities in software engineering while exploring cybersecurity and IT.</p>
+                <p>Bachelor of Science in Computer Science</p>
+                <p>Expected Graduation: 2026</p>
+            </div>
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <ul>
+                    <li>Programming Languages: HTML5, JavaScript, CSS3</li>
+                    <li>Software Development</li>
+                    <li>Problem Solving</li>
+                    <li>Team Collaboration</li>
+                    <li>Version Control (Git)</li>
+                    <li>Agile Methodologies</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="projects">
+        <h2>Academic & Personal Projects</h2>
+        <div class="featured-projects-grid">
+            <div class="featured-project-card">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio website showcasing my skills and projects. Built with HTML, CSS, and JavaScript. Features responsive design and modern UI/UX principles.</p>
+                <div class="featured-project-tech">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="projects.html" class="view-more">View Details</a>
+            </div>
+            <div class="featured-project-card">
+                <h3>Teach Toolbox</h3>
+                <p>Academic project that allows teachers to create and manage their classrooms, assignments, and students.</p>
+                <div class="featured-project-tech">
+                    <span>HTML</span>
+                    <span>Firebase</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="projects.html" class="view-more">View Details</a>
+            </div>
+            <div class="featured-project-card">
+                <h3>Interactive Cell Grid</h3>
+                <p>An interactive grid of cells that can toggle between alive and dead states, implementing Conway's Game of Life.</p>
+                <div class="featured-project-tech">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                </div>
+                <a href="grid.html" class="view-more">Try It Out</a>
+            </div>
+        </div>
+        <div class="view-all-projects">
+            <a href="projects.html" class="cta-button primary">View All Projects</a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="personal">
+        <h2>About Me</h2>
+        <div class="personal-content">
+            <div class="personal-text">
+                <div class="interests">
+                    <h3>Outside of Programming</h3>
+                    <p>When I'm not coding, I'm usually rockclimbing, playing videogames, or watching movies/shows. </p>
+                </div>
+            </div>
+            <div class="personal-qualities">
+                <h3>Personal Traits</h3>
+                <ul>
+                    <li>Adaptable & Quick Learner</li>
+                    <li>Strong Communication Skills</li>
+                    <li>Creative Problem Solver</li>
+                    <li>Team Player</li>
+                    <li>Detail-Oriented</li>
+                    <li>Eager to Learn</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <div class="contact-content">
+            <p class="contact-intro">I'm currently seeking internship opportunities in software engineering, cybersecurity, or IT. Feel free to reach out!</p>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html> 

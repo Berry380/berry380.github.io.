@@ -135,9 +135,11 @@
         <div class="contact-content">
             <p class="contact-intro">I'm currently seeking internship opportunities in software engineering, cybersecurity, or IT. Feel free to reach out!</p>
             <form id="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" required></textarea>
+                <input type="hidden" name="access_key" value="38c1aaf4-0a46-4d8e-a09f-88e19a8e7e5a">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <div id="result" style="display: none;"></div>
                 <button type="submit">Send Message</button>
             </form>
         </div>

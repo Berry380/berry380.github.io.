@@ -1,20 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Add smooth scrolling for navigation links
-    document.querySelectorAll('nav a').forEach(anchor => {
-        anchor.addEventListener('click', function(e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        });
-    });
-    
+
     // Add animation to project items when they come into view
     const projectItems = document.querySelectorAll('.project-item');
     
@@ -48,4 +32,3 @@ document.addEventListener('DOMContentLoaded', function() {
             this.style.transform = 'translateY(0)';
         });
     });
-}); 

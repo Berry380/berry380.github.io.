@@ -317,35 +317,74 @@ h2 {
     z-index: -1;
 }
 
+/* About Section Styling */
 .personal-content {
-    max-width: 800px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin: 2rem 0;
 }
 
 .personal-text {
-    color: #666;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+.interests-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .interests {
-    padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.9);
-    border-radius: 12px;
-    border: 1px solid rgba(76, 175, 80, 0.2);
-    box-shadow: 0 4px 12px rgba(76, 175, 80, 0.1);
-    backdrop-filter: blur(5px);
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 1.5rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: left;
 }
 
 .interests h3 {
-    color: #1a1a1a;
-    font-size: 1.5rem;
+    color: #2e7d32;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
+}
+
+.interests ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.interests ul ul {
+    list-style-type: circle;
+    padding-left: 1.5rem;
 }
 
 .personal-qualities ul {
     list-style: none;
+}
+
+.video-games ul{
+    padding-left: 10px;
 }
 
 .personal-qualities li {
@@ -683,4 +722,4 @@ section h2::after {
 /* Ensure sections flow seamlessly */
 section + section {
     margin-top: 0;
-} 
+}

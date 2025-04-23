@@ -248,33 +248,32 @@ h2 {
     display: grid;
     grid-template-areas: 
         "university university university"
-        "traits skills skills";
+        "skills traits certifications";
     gap: 2rem;
     padding: 0 2rem;
 }
 
-.education-item {
-    grid-area: university;
+.education-item, .skills, .personal-qualities, .certifications {
     background: rgba(255, 255, 255, 0.95);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.education-item {
+    grid-area: university;
 }
 
 .skills {
     grid-area: skills;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .personal-qualities {
     grid-area: traits;
-    background: rgba(255, 255, 255, 0.95);
-    padding: 2rem;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.certifications {
+    grid-area: certifications;
 }
 
 .education-item h3 {
@@ -308,6 +307,16 @@ h2 {
     border-radius: 8px;
     font-weight: 500;
 }
+
+.certifications li {
+    list-style: none;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
 
 /* Personal section */
 .personal {
@@ -749,7 +758,8 @@ section + section {
         grid-template-areas: 
             "university"
             "skills"
-            "traits";
+            "traits"
+            "certifications";
         gap: 1.5rem;
     }
 }

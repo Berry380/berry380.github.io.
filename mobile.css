@@ -1,0 +1,171 @@
+/* Mobile-specific stylesheet (loaded only on small viewports via media attribute)
+   This file intentionally replaces the desktop layout on small screens.
+*/
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: #f9fbf9;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Use Bootstrap container behavior but ensure full-width feel */
+.container-fluid, .nav-content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+/* Navbar — compact and fixed */
+.navbar {
+    background-color: rgba(27, 94, 32, 0.98);
+    padding: 0.5rem 0.75rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1100;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Ensure toggler shows and links stack when open (Bootstrap handles this),
+   but make larger touch targets */
+.navbar .navbar-toggler {
+    padding: 0.45rem 0.6rem;
+}
+.navbar .nav-link {
+    padding: 0.6rem 0.4rem;
+    font-size: 1rem;
+}
+
+/* Hero — smaller, mobile-first layout */
+.hero {
+    padding-top: 4.5rem; /* leave room for fixed navbar */
+    padding-bottom: 2rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-attachment: scroll;
+}
+
+.hero-content h1 {
+    font-size: 1.9rem;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}
+
+.hero-content p {
+    color: #f0f0f0;
+    font-size: 1rem;
+    max-width: 92%;
+    margin: 0.25rem auto;
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border: 2px solid rgba(46,125,50,0.95);
+}
+
+/* CTA buttons stack */
+.cta-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+    width: 92%;
+}
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Sections — compact spacing */
+section {
+    padding: 2rem 0.75rem;
+    min-height: auto;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Education — single column stack */
+.edu-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+}
+
+.education-item, .skills, .personal-qualities, .certifications {
+    padding: 0.9rem;
+    border-radius: 8px;
+}
+
+.certifications li, .skills li, .personal-qualities li {
+    background-color: #fff;
+    margin-bottom: 0.6rem;
+    padding: 0.6rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Projects grid — single column cards */
+.featured-projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0 0.5rem;
+}
+.featured-project-card {
+    padding: 1rem;
+}
+
+/* Contact form — full width inputs */
+.contact-content {
+    padding: 1rem;
+}
+#contact-form input, #contact-form textarea, button {
+    width: 100%;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    padding: 1rem 0.75rem;
+    font-size: 0.95rem;
+}
+
+/* Ensure background images don't cause scaling issues */
+.hero, .edu::before, .personal::before, .experience::before, .projects::before, .contact::before {
+    background-attachment: scroll !important;
+    background-position: center;
+}
+
+/* Very small screens adjustments */
+@media (max-width: 420px) {
+    .hero-content h1 { font-size: 1.6rem; }
+    .logo { font-size: 1rem; }
+    .profile-picture { width: 88px; height: 88px; }
+}

@@ -253,7 +253,7 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/CAMPUS.jpg');
+    background-image: url('../assets/CAMPUS.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -363,7 +363,7 @@ h2 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/PERSONAL.jpg  ');
+    background-image: url('../assets/PERSONAL.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -586,7 +586,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/Untitled.jpg');
+    background-image: url('../assets/Untitled.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -719,7 +719,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/PROJECTS.jpg');
+    background-image: url('../assets/PROJECTS.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -745,7 +745,7 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url('assets/CONTACT.jpg');
+    background-image: url('../assets/CONTACT.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

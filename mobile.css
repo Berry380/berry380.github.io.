@@ -31,6 +31,35 @@ html, body {
 .navbar .navbar-toggler { border: 1px solid rgba(255,255,255,0.06); }
 .navbar .nav-link { color: #dbe9e0; padding: 0.6rem 0.4rem; }
 
+/* Hide the full navbar on mobile — replace with small sticky section label */
+@media (max-width: 900px) {
+    .navbar {
+        display: none !important;
+    }
+}
+
+/* Mobile section label that appears at top-left when in a section */
+.mobile-section-label {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 1300;
+    background: rgba(3,12,18,0.85);
+    color: #c7ffe6;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+    border: 1px solid rgba(58,255,119,0.06);
+    transition: transform 220ms ease, opacity 220ms ease;
+    pointer-events: none;
+}
+.mobile-section-label.hidden { opacity: 0; transform: translateY(-6px); }
+.mobile-section-label.visible { opacity: 1; transform: translateY(0); }
+
+.visually-hidden { opacity: 0; pointer-events: none; }
+
 /* Hero */
 .hero {
     padding-top: 5.2rem; /* give a touch more space under navbar */

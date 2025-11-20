@@ -97,3 +97,29 @@ footer { text-align: center; color: rgba(191,255,224,0.7); padding: 0.9rem; font
     .cta-buttons { width: 96%; }
     section { padding: 1.6rem 0.75rem; }
 }
+
+/* Experience section tweaks for less crowded appearance */
+.experience-box { padding: 1.25rem; gap: 1rem; display: flex; flex-direction: column; }
+.experience-image { display: flex; justify-content: center; margin-top: 0.25rem; }
+.experience-description { padding-top: 0.25rem; }
+
+/* Shrink UNT/helpdesk image specifically */
+.helpdesk-picture {
+    width: 120px; /* smaller on mobile */
+    max-width: 35%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.55);
+}
+
+/* Make sections breathe even more */
+.section-separator { height: 22px; }
+.education-item, .skills, .personal-qualities, .certifications, .featured-project-card {
+    padding: 1.25rem; /* extra breathing room */
+}
+
+/* Slightly larger gaps for project cards */
+.featured-projects-grid { gap: 1.4rem; }
+
+/* Reduce density of lists */
+.interests, .personal-qualities, .skills { line-height: 1.7; }
